@@ -15,36 +15,52 @@ a:link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 98%;
+  width: 95%;
   height: 10vh;
   margin: auto;
   font-size: 1.5rem;
 }
 
-.personalCon {
-  width: 20%;
-  height: 50vh;
-  margin: auto;
-}
 
 .flexCon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 40%;
+  justify-content: center;
+  width: 20%;
+  height: 50vh;
+  margin: auto;
 }
 
 .githubIcon {
   text-decoration: none;
   color: black;
   font-size: 6rem;
-  margin: 1.5rem 0 0 0;
+  margin-top: 1.75rem;
+}
+
+.aboutCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+
 }
 
 .personalPic {
-  height: 100%;
-  width: 60%;
+  height: 35%;
+  width: 25%;
   border-radius: 50%;
+  margin-top: .75rem;
 }
+
+.aboutText {
+  width: 60%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  
+}
+
+
 
