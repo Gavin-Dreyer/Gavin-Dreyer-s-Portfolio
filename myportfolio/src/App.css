@@ -1,0 +1,50 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.App {
+  background-color: #dcecfa;
+  height: 100vh
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  height: 10vh;
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.personalCon {
+  width: 20%;
+  height: 50vh;
+  margin: auto;
+}
+
+.flexCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+}
+
+.githubIcon {
+  text-decoration: none;
+  color: black;
+  font-size: 6rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.personalPic {
+  height: 100%;
+  width: 60%;
+  border-radius: 50%;
+}
+
