@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import {TweenMax, Linear} from 'gsap';
+import {TweenMax, Linear} from 'gsap'
 import { FaGithubSquare } from 'react-icons/fa'
 
 

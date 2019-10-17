@@ -3,7 +3,6 @@ body {
 }
 
 a:link {
-  text-decoration: none;
 }
 
 .App {
@@ -19,8 +18,36 @@ a:link {
   height: 10vh;
   margin: auto;
   font-size: 1.5rem;
+  
 }
 
+.navBarLink1:hover {
+  box-shadow:
+    1px 1px 1px 1px #000,
+    2px 2px 1px 1px #000,
+    3px 3px 1px 1px #000,
+    4px 4px 1px 1px #000,
+    5px 5px 1px 1px #000,
+    6px 6px 1px 1px #000,  
+    7px 7px 1px 1px #000; 
+    -webkit-transform: translateX(-7px);
+    transform: translateX(-7px);
+    padding: .25rem;
+}
+
+.navBarLink2:hover {
+  box-shadow:
+    -1px 1px 1px 1px #000,
+    -2px 2px 1px 1px #000,
+    -3px 3px 1px 1px #000,
+    -4px 4px 1px 1px #000,
+    -5px 5px 1px 1px #000,
+    -6px 6px 1px 1px #000,  
+    -7px 7px 1px 1px #000; 
+    -webkit-transform: translateX(7px);
+    transform: translateX(7px);
+    padding: .25rem;
+}
 
 .flexCon {
   display: flex;
@@ -57,6 +84,7 @@ a:link {
   width: 25%;
   border-radius: 50%;
   margin-top: .75rem;
+  box-shadow: 3px 3px 10px 3px;
 }
 
 .aboutText {

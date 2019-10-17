@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
     return (
         <div className='navBar'>
-            <Link to='/'>Gavin Dreyer</Link>
-            <Link to='/about'>About</Link>
+            <Link className='navBarLink1' to='/'>Gavin Dreyer</Link>
+            <Link className='navBarLink2' to='/about'>About</Link>
         </div>
     )
 }
