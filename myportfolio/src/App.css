@@ -2,9 +2,6 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-a:link {
-}
-
 .App {
   background-color: #dcecfa;
   height: 100vh
@@ -19,6 +16,10 @@ a:link {
   margin: auto;
   font-size: 1.5rem;
   
+}
+
+.navBarLink2{
+  margin: 1rem;
 }
 
 .navBarLink1:hover {
@@ -91,7 +92,19 @@ a:link {
   width: 60%;
   font-size: 1.5rem;
   font-weight: 500;
-  
+}
+
+.portfolioPiece1{
+  background-image: url('');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 60%;
+  margin: auto;
+}
+
+.portfolioText {
+  font-size: 5rem;
 }
 
 

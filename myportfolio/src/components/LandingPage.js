@@ -45,7 +45,7 @@ const LandingPage = () => {
                     ref={element => {logoElement = element}} 
                     ><FaGithubSquare className='githubIcon' /></a>
                     <p
-                    ref={element => {textElement = element}}>Welcome to my Website 😃</p>
+                    ref={element => {textElement = element}}>Welcome</p>
                 </div>
             </div>
         </div>
