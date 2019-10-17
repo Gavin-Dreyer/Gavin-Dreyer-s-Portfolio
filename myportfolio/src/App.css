@@ -49,7 +49,11 @@ a:link {
 }
 
 .personalPic {
-  height: 35%;
+  background-image: url('./assets/personalPic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
   width: 25%;
   border-radius: 50%;
   margin-top: .75rem;
