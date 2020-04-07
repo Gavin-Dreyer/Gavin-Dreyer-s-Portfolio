@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import {TweenMax, Linear} from 'gsap'
+import {TweenMax, Linear, Bounce, Back } from 'gsap'
 import { FaGithubSquare } from 'react-icons/fa'
 
 
@@ -18,19 +18,25 @@ const LandingPage = () => {
         TweenMax.from(
             textElement,
             2,
-            {x:-300, opacity:0, scale:0.5},
+            {x:-300, opacity:0, scale:0.5, ease: Back.ease},
         )
     }, []);
 
     function scaleUp() {
-        TweenMax.to(logoElement, 1, {
+        TweenMax.to(
+            logoElement, 
+            1, 
+            {
             scale: 1.25,
-            ease: Linear.ease
+            ease: Back.ease
         });
     }
 
     function scaleDown() {
-        TweenMax.to(logoElement, 1, {
+        TweenMax.to(
+            logoElement, 
+            1, 
+            {
             scale: 0.75
         });
     }

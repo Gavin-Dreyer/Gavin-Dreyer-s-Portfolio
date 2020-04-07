@@ -1,111 +1,94 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 .App {
-  background-color: #dcecfa;
-  height: 100vh
+	background-color: #dcecfa;
+	height: 100vh;
 }
 
 .navBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 95%;
-  height: 10vh;
-  margin: auto;
-  font-size: 1.5rem;
-  
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+	height: 10vh;
+	margin: auto;
+	font-size: 1.5rem;
 }
 
-.navBarLink2{
-  margin: 1rem;
+.navBarLink2 {
+	margin: 1rem;
 }
 
 .navBarLink1:hover {
-  box-shadow:
-    1px 1px 1px 1px #000,
-    2px 2px 1px 1px #000,
-    3px 3px 1px 1px #000,
-    4px 4px 1px 1px #000,
-    5px 5px 1px 1px #000,
-    6px 6px 1px 1px #000,  
-    7px 7px 1px 1px #000; 
-    -webkit-transform: translateX(-7px);
-    transform: translateX(-7px);
-    padding: .25rem;
+	box-shadow: 1px 1px 1px 1px #000, 2px 2px 1px 1px #000, 3px 3px 1px 1px #000,
+		4px 4px 1px 1px #000, 5px 5px 1px 1px #000, 6px 6px 1px 1px #000,
+		7px 7px 1px 1px #000;
+	transform: translateX(-7px);
+	padding: 0.25rem;
 }
 
 .navBarLink2:hover {
-  box-shadow:
-    -1px 1px 1px 1px #000,
-    -2px 2px 1px 1px #000,
-    -3px 3px 1px 1px #000,
-    -4px 4px 1px 1px #000,
-    -5px 5px 1px 1px #000,
-    -6px 6px 1px 1px #000,  
-    -7px 7px 1px 1px #000; 
-    -webkit-transform: translateX(7px);
-    transform: translateX(7px);
-    padding: .25rem;
+	box-shadow: -7px 7px 1px 1px #000, -6px 6px 1px 1px #000,
+		-5px 5px 1px 1px #000, -4px 4px 1px 1px #000, -3px 3px 1px 1px #000,
+		-2px 2px 1px 1px #000, -1px 1px 1px 1px #000;
+	transform: translateX(7px);
+	padding: 0.25rem;
 }
 
 .flexCon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  height: 50vh;
-  margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 20%;
+	height: 50vh;
+	margin: auto;
 }
 
 .githubIcon {
-  text-decoration: none;
-  color: black;
-  font-size: 6rem;
-  margin-top: 1.75rem;
+	text-decoration: none;
+	color: black;
+	font-size: 6rem;
+	margin-top: 1.75rem;
 }
 
 .aboutCon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
 }
 
 .personalPic {
-  background-image: url('./assets/personalPic.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50%;
-  width: 25%;
-  border-radius: 50%;
-  margin-top: .75rem;
-  box-shadow: 3px 3px 10px 3px;
+	background-image: url('./assets/personalPic.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 50%;
+	width: 25%;
+	border-radius: 50%;
+	margin-top: 0.75rem;
+	box-shadow: 3px 3px 10px 3px;
 }
 
 .aboutText {
-  width: 60%;
-  font-size: 1.5rem;
-  font-weight: 500;
+	width: 60%;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
-.portfolioPiece1{
-  background-image: url('');
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 40vh;
-  width: 60%;
-  margin: auto;
+.portfolioPiece1 {
+	background-image: url('');
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 40vh;
+	width: 60%;
+	margin: auto;
 }
 
 .portfolioText {
-  font-size: 5rem;
+	font-size: 5rem;
 }
-
-
-
