@@ -4,7 +4,6 @@ body {
 
 .App {
 	background-color: #dcecfa;
-	height: 100vh;
 }
 
 .navBar {
@@ -79,6 +78,11 @@ body {
 	font-weight: 500;
 }
 
+.portfolio {
+	display: flex;
+	justify-content: center;
+}
+
 .portfolioPiece {
 	display: flex;
 	flex-direction: column;
@@ -126,4 +130,14 @@ body {
 
 .portfolioText {
 	font-size: 5rem;
+}
+
+.arrowBtn {
+	font-size: 5rem;
+	background-color: #dcecfa;
+	border: none;
+}
+
+.arrowBtn:focus {
+	outline: none;
 }
