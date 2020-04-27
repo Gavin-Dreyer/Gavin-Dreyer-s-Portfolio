@@ -80,12 +80,29 @@ body {
 }
 
 .portfolioPiece1 {
-	background-image: url('');
-	background-size: contain;
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projectTitle {
+	padding: 1rem;
+	font-size: 2rem;
+}
+
+.projectImage {
+	background-image: url('./assets/WellDoneLanding.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 40vh;
 	width: 60%;
 	margin: auto;
+	border-radius: 0.25rem;
+}
+
+.projectLinks {
+	margin-left: 0.25rem;
 }
 
 .portfolioText {
