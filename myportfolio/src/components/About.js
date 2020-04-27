@@ -1,37 +1,58 @@
-import React, { useRef, useEffect } from 'react'
-import { TweenMax } from 'gsap'
+import React, { useRef, useEffect } from 'react';
+import { TweenMax } from 'gsap';
 
 const About = () => {
-    let textElement = useRef(null)
-    let picElement = useRef(null)
+	let textElementTech = useRef(null);
+	let textElementAbout = useRef(null);
+	let picElement = useRef(null);
 
-    useEffect(() => {
-        TweenMax.from(
-            textElement,
-            1,
-            {x:0, y:300, opacity:0, scale:0.5},
-        )
-        TweenMax.from(
-            picElement,
-            2,
-            {x:0, y:-300, opacity:0, scale:0.5},
-        )
-    })
-    return (
-        <>
-            <div className='aboutCon'>
-                <div 
-                ref={element => {picElement = element}}
-                className='personalPic'></div>
-                <p 
-                ref={element => {textElement = element}}
-                className='aboutText'>
-                    Hi! I'm Gavin Dreyer and I am a Califonia based fullstack web developer. The programming languages I am most proficient at include HTML, CSS, and Javascript. Java coming soon{String.fromCharCode(8482)}. Most of my time is spent doing what I love, building Web Apps with React! When I'm not working on a project, you'll most likely find me at the beach or watching Baseball! Go SF Giants! ⚾️
-                </p>
-            </div>
-            
-        </>
-    )
-}
+	useEffect(() => {
+		TweenMax.from(textElementTech, 1, { x: 0, y: 300, opacity: 0, scale: 0.5 });
+		TweenMax.from(textElementAbout, 1, {
+			x: 0,
+			y: 300,
+			opacity: 0,
+			scale: 0.5
+		});
+		TweenMax.from(picElement, 2, { x: 0, y: -300, opacity: 0, scale: 0.5 });
+	});
+	return (
+		<div className="aboutCon">
+			<div
+				ref={element => {
+					picElement = element;
+				}}
+				className="personalPic"
+			></div>
+			<p
+				ref={element => {
+					textElementTech = element;
+				}}
+				className="aboutText"
+			>
+				Hi! I'm Gavin Dreyer and I am a California based(but willing to
+				relocate) full stack web developer. The programming languages I am most
+				proficient in are JavaScript and Python. Most of my experience comes
+				from building webApp clients with React in combination with Redux for
+				state management. On the server side I am skilled at utilizing Node with
+				Express in combination with Knex for queries in a RESTFUL API, or using
+				GraphQL for a more dynamic approach. For databases, I am competent in
+				Sqlite and PostgreSQL.
+			</p>
+			<p
+				ref={element => {
+					textElementAbout = element;
+				}}
+				className="aboutText"
+			>
+				Not only do I love learning programming languages, but I am also
+				extremely into foreign languages as well! I have a strong background in
+				Spanish, but I am currently teaching myself Portuguese. If I'm not
+				learning a language, I'm usually caught up in something Baseball
+				related. Go SF Giants! ⚾️
+			</p>
+		</div>
+	);
+};
 
-export default About
+export default About;
