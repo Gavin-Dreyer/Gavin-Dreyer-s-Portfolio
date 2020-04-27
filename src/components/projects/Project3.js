@@ -28,12 +28,9 @@ const Project3 = () => {
 				</li>
 				<li>Created an alarm for the user</li>
 			</ul>
-			<p>
+			<p className="projectLinks">
 				Front End Repo:
-				<a
-					className="projectLinks"
-					href="https://github.com/Build-Week-Sleep-Tracker-Oct/Front-End"
-				>
+				<a href="https://github.com/Build-Week-Sleep-Tracker-Oct/Front-End">
 					https://github.com/Build-Week-Sleep-Tracker-Oct/Front-End
 				</a>
 			</p>

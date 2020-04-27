@@ -28,21 +28,15 @@ const Project1 = () => {
 					our API
 				</li>
 			</ul>
-			<p>
+			<p className="projectLinks">
 				Front End Repo:
-				<a
-					className="projectLinks"
-					href="https://github.com/Lambda-School-Labs/well-done-fe"
-				>
+				<a href="https://github.com/Lambda-School-Labs/well-done-fe">
 					https://github.com/Lambda-School-Labs/well-done-fe
 				</a>
 			</p>
-			<p>
+			<p className="projectLinks">
 				Back End Repo:
-				<a
-					className="projectLinks"
-					href="https://github.com/Lambda-School-Labs/well-done-be"
-				>
+				<a href="https://github.com/Lambda-School-Labs/well-done-be">
 					https://github.com/Lambda-School-Labs/well-done-be
 				</a>
 			</p>

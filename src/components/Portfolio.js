@@ -30,7 +30,7 @@ const Portfolio = () => {
 
 	return (
 		<div className="portfolio">
-			<button className="arrowBtn" onClick={() => navigateUp()}>
+			<button className="arrowBtn" onClick={() => navigateDown()}>
 				{'⬅'}
 			</button>
 
@@ -38,7 +38,7 @@ const Portfolio = () => {
 			{project === 2 ? <Project2 /> : ''}
 			{project === 3 ? <Project3 /> : ''}
 
-			<button className="arrowBtn" onClick={() => navigateDown()}>
+			<button className="arrowBtn" onClick={() => navigateUp()}>
 				{'⮕'}
 			</button>
 		</div>

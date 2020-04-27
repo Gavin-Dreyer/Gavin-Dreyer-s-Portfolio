@@ -28,30 +28,21 @@ const Project2 = () => {
 					requested verb
 				</li>
 			</ul>
-			<p>
+			<p className="projectLinks">
 				Front End Repo:
-				<a
-					className="projectLinks"
-					href="https://github.com/Gavin-Dreyer/spanishConjugation"
-				>
+				<a href="https://github.com/Gavin-Dreyer/spanishConjugation">
 					https://github.com/Gavin-Dreyer/spanishConjugation
 				</a>
 			</p>
-			<p>
+			<p className="projectLinks">
 				GraphQL Server Repo:
-				<a
-					className="projectLinks"
-					href="https://github.com/Gavin-Dreyer/spanish-verbs-graphql-server"
-				>
+				<a href="https://github.com/Gavin-Dreyer/spanish-verbs-graphql-server">
 					https://github.com/Gavin-Dreyer/spanish-verbs-graphql-server
 				</a>
 			</p>
-			<p>
+			<p className="projectLinks">
 				RESTFUL API Server Repo:
-				<a
-					className="projectLinks"
-					href="https://github.com/Gavin-Dreyer/SpanishConj"
-				>
+				<a href="https://github.com/Gavin-Dreyer/SpanishConj">
 					https://github.com/Gavin-Dreyer/SpanishConj
 				</a>
 			</p>
