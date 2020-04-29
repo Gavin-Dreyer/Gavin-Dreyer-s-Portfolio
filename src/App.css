@@ -113,8 +113,8 @@ body {
 	background-image: url('./assets/Conjugator.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 0% 0.3%;
-	height: 40vh;
+	background-position: 0% 0.4%;
+	height: 400px;
 	width: 60%;
 	margin: auto;
 	border-radius: 0.25rem;
@@ -161,6 +161,18 @@ body {
 	border-radius: 25px;
 }
 
+@media screen and (max-width: 1300px) {
+	.projectImage2 {
+		background-position: 0% 1%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.projectImage2 {
+		background-position: 0% 2%;
+	}
+}
+
 @media screen and (max-width: 1020px) {
 	.aboutCon {
 		display: flex;
@@ -171,34 +183,55 @@ body {
 	}
 
 	.personalPic {
-		background-image: url('./assets/personalPic.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
 		height: 300px;
 		width: 42.5%;
-		border-radius: 50%;
-		margin-top: 0.75rem;
+	}
+
+	.projectImage {
+		height: 40vh;
+		width: 100%;
+	}
+
+	.projectImage2 {
+		background-position: 0% 2%;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.projectImage2 {
+		background-position: 0% 2%;
+		height: 200px;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.aboutCon {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 		height: 100%;
 	}
 
 	.personalPic {
-		background-image: url('./assets/personalPic.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
 		height: 300px;
 		width: 250px;
-		border-radius: 50%;
-		margin-top: 0.75rem;
+	}
+
+	.projectTitle {
+		padding: 1rem;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.projectImage {
+		height: 40vh;
+		width: 100%;
+	}
+
+	.projectImage2 {
+		background-position: 0% 2%;
+		height: 175px;
+	}
+
+	.projectImage3 {
+		height: 175px;
 	}
 }
