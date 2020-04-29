@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import LandingPage from './components/LandingPage';
+import Contact from './components/Contact';
 
 function App() {
 	return (
@@ -14,7 +15,8 @@ function App() {
 				<Route component={NavBar} />
 				<Route exact path="/" component={LandingPage} />
 				<Route path="/about" component={About} />
-				<Route path="/Portfolio" component={Portfolio} />
+				<Route path="/portfolio" component={Portfolio} />
+				<Route path="/contact" component={Contact} />
 			</div>
 		</Router>
 	);
