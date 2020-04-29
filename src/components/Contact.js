@@ -25,8 +25,10 @@ const Contact = () => {
 		e.preventDefault();
 	};
 
-	const handleChange = e => setContact({ [e.target.name]: e.target.value });
+	const handleChange = e =>
+		setContact({ ...contact, [e.target.name]: e.target.value });
 
+	console.log(contact);
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
