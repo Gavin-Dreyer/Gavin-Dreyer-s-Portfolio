@@ -79,6 +79,16 @@ body {
 	font-weight: 500;
 }
 
+.carousel {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.carouselItem {
+	margin: 1rem;
+}
+
 .portfolio {
 	display: flex;
 	justify-content: center;
