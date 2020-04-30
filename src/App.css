@@ -115,7 +115,7 @@ body {
 	background-image: url('./assets/WellDoneLanding.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 40vh;
+	height: 30vh;
 	width: 60%;
 	margin: auto;
 	border-radius: 0.25rem;
@@ -126,7 +126,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0% 0.4%;
-	height: 400px;
+	height: 300px;
 	width: 60%;
 	margin: auto;
 	border-radius: 0.25rem;
@@ -137,7 +137,7 @@ body {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 40vh;
+	height: 30vh;
 	width: 60%;
 	margin: auto;
 	border-radius: 0.25rem;
