@@ -32,8 +32,8 @@ const About = () => {
 			>
 				Hi! I'm Gavin Dreyer and I am a California based(but willing to
 				relocate) full stack web developer. The programming languages I am most
-				proficient in are JavaScript and Python. Most of my experience comes
-				from building webApp clients with React in combination with Redux for
+				proficient with are JavaScript and Python. Most of my experience comes
+				from building webApp clients in React in combination with Redux for
 				state management. On the server side I am skilled at utilizing Node with
 				Express in combination with Knex for queries in a RESTFUL API, or using
 				GraphQL for a more dynamic approach. For databases, I am competent in

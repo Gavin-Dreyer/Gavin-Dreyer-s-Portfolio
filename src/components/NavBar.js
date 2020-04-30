@@ -5,7 +5,7 @@ const NavBar = props => {
 	return (
 		<div className="navBar">
 			<Link className="navBarLink1" to="/">
-				Gavin Dreyer
+				Home
 			</Link>
 			<Link className="navBarLink1" to="/about">
 				About
