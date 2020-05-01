@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 import Project1 from './projects/Project1';
 import Project2 from './projects/Project2';
@@ -86,17 +86,13 @@ const Portfolio = () => {
 				</span>
 			</div>
 			<div className="portfolio">
-				<button className="arrowBtn" onClick={() => navigateDown()}>
-					{'⬅'}
-				</button>
+				<FaArrowLeft className="arrowBtn" onClick={() => navigateDown()} />
 
 				{project === 1 ? <Project1 /> : ''}
 				{project === 2 ? <Project2 /> : ''}
 				{project === 3 ? <Project3 /> : ''}
 
-				<button className="arrowBtn" onClick={() => navigateUp()}>
-					{'⮕'}
-				</button>
+				<FaArrowRight className="arrowBtn" onClick={() => navigateUp()} />
 			</div>
 		</>
 	);

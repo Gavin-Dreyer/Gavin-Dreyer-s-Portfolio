@@ -30,7 +30,7 @@ const About = () => {
 				}}
 				className="aboutText"
 			>
-				Hi! I'm Gavin Dreyer and I am a California based(but willing to
+				Hi! I'm Gavin Dreyer and I am a California based (but willing to
 				relocate) full stack web developer. The programming languages I am most
 				proficient with are JavaScript and Python. Most of my experience comes
 				from building webApp clients in React in combination with Redux for
