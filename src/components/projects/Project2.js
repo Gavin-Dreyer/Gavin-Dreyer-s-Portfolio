@@ -3,13 +3,10 @@ import React from 'react';
 const Project2 = () => {
 	return (
 		<div className="portfolioPiece">
-			<a className="projectTitle" href="https://conjugatorlambda.netlify.app/">
+			<a className="projectTitle" href="https://gdconjugator.netlify.app/">
 				Conjugator
 			</a>
-			<a
-				className="projectImage2"
-				href="https://conjugatorlambda.netlify.app/"
-			></a>
+			<a className="projectImage2" href="https://gdconjugator.netlify.app/"></a>
 			<p>A webApp used to practice conjugations of Spanish verbs</p>
 			<p>
 				Built with React, Redux, Node/Express, Knex, Sqlite, GraphQL, Apollo
