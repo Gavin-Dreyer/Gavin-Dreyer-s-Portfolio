@@ -1,12 +1,19 @@
 import React from 'react';
-
+import WellDone from '../../assets/WellDoneLanding.png';
 const Project1 = () => {
 	return (
 		<div className="portfolioPiece">
 			<a className="projectTitle" href="https://welldone.netlify.app/">
 				WellDone Dashboard
 			</a>
-			<a className="projectImage" href="https://welldone.netlify.app/"></a>
+			<a
+				className="projectImage1"
+				alt="fresh well water"
+				href="https://lambdasomnus.netlify.app/"
+			>
+				<img src={WellDone} className="imageCon" />
+			</a>
+
 			<p>
 				A dashboard for the WellDone organization to display the current status
 				and historical counts of individual wells

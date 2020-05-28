@@ -73,7 +73,7 @@ const Portfolio = () => {
 	};
 
 	return (
-		<>
+		<div className="portfolio">
 			<div className="carousel">
 				<span className="carouselItem" ref={proj1}>
 					{'■'}
@@ -85,16 +85,16 @@ const Portfolio = () => {
 					{'■'}
 				</span>
 			</div>
-			<div className="portfolio">
+			<div className="portfolioProjects">
 				<FaArrowLeft className="arrowBtn" onClick={() => navigateDown()} />
 
-				{project === 1 ? <Project1 /> : ''}
-				{project === 2 ? <Project2 /> : ''}
-				{project === 3 ? <Project3 /> : ''}
+				{project === 1 ? <Project1 /> : null}
+				{project === 2 ? <Project2 /> : null}
+				{project === 3 ? <Project3 /> : null}
 
 				<FaArrowRight className="arrowBtn" onClick={() => navigateUp()} />
 			</div>
-		</>
+		</div>
 	);
 };
 
