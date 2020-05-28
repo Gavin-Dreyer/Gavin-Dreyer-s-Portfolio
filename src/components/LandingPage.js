@@ -2,16 +2,41 @@ import React, { useRef, useEffect } from 'react';
 import { TweenMax, Back } from 'gsap';
 import { FaGithubSquare } from 'react-icons/fa';
 
+const skills = [
+	'HTML',
+	'CSS',
+	'JavaScript',
+	'Python',
+	'React.js',
+	'Redux',
+	'Vue.js',
+	'Node.js',
+	'Express',
+	'PostgreSQL',
+	'Sqlite'
+];
+
 const LandingPage = () => {
 	let logoElement = useRef(null);
 	let textElement = useRef(null);
+	let textElementDev = useRef(null);
+	let textElementSkills = useRef(null);
 
 	useEffect(() => {
-		console.log(logoElement);
 		TweenMax.from(logoElement, 2, { x: 300, opacity: 0, scale: 0.5 });
 		TweenMax.from(textElement, 2, {
 			x: -300,
 			opacity: 0,
+			scale: 0.5,
+			ease: Back.ease
+		});
+		TweenMax.from(textElementDev, 1.5, {
+			opacity: 1,
+			scale: 0.5,
+			ease: Back.ease
+		});
+		TweenMax.from(textElementSkills, 1.5, {
+			opacity: 1,
 			scale: 0.5,
 			ease: Back.ease
 		});
@@ -48,13 +73,27 @@ const LandingPage = () => {
 				}}
 				id="aboutText"
 			>
-				{/* Welcome to my site! I'm Gavin, a full stack web developer that primarily
-				works in React/Node with JavaScript, while also being competent in
-				working with Python. I am passionate about programming because I love
-				building things that help people improve themselves or keep track of
-				their data. You can check out my recent projects{' '}
-				<a href="https://gavindreyer.com/portfolio">here </a>and what I'm
-				currently working on in GitHub above. */}
+				Welcome! I'm Gavin!{' '}
+			</p>
+			<p
+				id="aboutTextDev"
+				ref={element => {
+					textElementDev = element;
+				}}
+			>
+				Full Stack Web Developer
+			</p>
+			<p
+				id="aboutTextSkills"
+				ref={element => {
+					textElementSkills = element;
+				}}
+			>
+				<span id="techSk">Technical Skills</span>
+				<span id="techSkC">:</span>
+				{skills.map(skill => {
+					return <span className="skills">{skill}</span>;
+				})}
 			</p>
 		</div>
 	);
