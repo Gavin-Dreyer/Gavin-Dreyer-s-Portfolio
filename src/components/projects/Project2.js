@@ -10,7 +10,7 @@ const Project2 = () => {
 			<a
 				className="projectImage2"
 				alt="cartoon aligator"
-				href="https://lambdasomnus.netlify.app/"
+				href="https://gdconjugator.netlify.app/"
 			>
 				<img src={Ali} className="imageCon2" />
 			</a>

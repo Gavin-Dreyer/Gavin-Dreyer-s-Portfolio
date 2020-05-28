@@ -9,7 +9,7 @@ const Project1 = () => {
 			<a
 				className="projectImage1"
 				alt="fresh well water"
-				href="https://lambdasomnus.netlify.app/"
+				href="https://welldone.netlify.app/"
 			>
 				<img src={WellDone} className="imageCon" />
 			</a>
