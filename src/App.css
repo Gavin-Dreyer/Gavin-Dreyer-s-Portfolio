@@ -206,9 +206,28 @@ body {
 	font-weight: 500;
 }
 
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	height: 90%;
+	width: 100%;
+}
+
+.portfolioProjects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+}
+
 .carousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 80%;
-	margin: auto;
+	height: 10%;
 	text-align: center;
 }
 
@@ -216,19 +235,21 @@ body {
 	margin: 1rem;
 }
 
-.portfolio {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-}
-
 .portfolioPiece {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 60%;
+	justify-content: center;
+	color: white;
+}
+
+.portfolioPiece2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	width: 80vw;
 }
 
 .projectTitle {
@@ -236,35 +257,52 @@ body {
 	font-size: 2rem;
 }
 
-.projectImage {
-	background-image: url('./assets/WellDoneLanding.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.projectTitle2 {
+	padding: 1rem;
+	font-size: 2rem;
+}
+
+.imageCon {
 	height: 30vh;
-	width: 60%;
-	margin: auto;
+	width: 50%;
 	border-radius: 0.25rem;
 }
 
+.imageCon2 {
+	height: 30vh;
+	width: 25%;
+	border-radius: 0.25rem;
+}
+
+.imageCon3 {
+	height: 30vh;
+	width: 50%;
+	border-radius: 0.25rem;
+}
+
+.projectImage1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+	width: 80%;
+}
+
 .projectImage2 {
-	background-image: url('./assets/Conjugator.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 0% 0.4%;
-	height: 300px;
-	width: 60%;
-	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30%;
+	width: 80%;
 	border-radius: 0.25rem;
 }
 
 .projectImage3 {
-	background-image: url('./assets/Somnus.svg');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 30vh;
-	width: 60%;
-	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30%;
+	width: 80%;
 	border-radius: 0.25rem;
 }
 
@@ -276,6 +314,10 @@ body {
 	margin-top: -0.5rem;
 }
 
+.projectLinks2 {
+	margin-top: -0.5rem;
+}
+
 .projectLinks a {
 	margin-left: 0.25rem;
 }
@@ -283,7 +325,7 @@ body {
 .arrowBtn {
 	font-size: 5rem;
 	/* background-color: #dcecfa; */
-	background-image: url('./assets/background.jpg');
+	/* background-image: url('./assets/background.jpg'); */
 	border: none;
 	margin: 1rem;
 	padding: 1.1rem;
