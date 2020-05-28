@@ -30,38 +30,39 @@ const Contact = () => {
 
 	return (
 		<div className="contact">
-			<div>If you'd like to connect, please send me a message!</div>
+			<div id="opener">If you'd like to connect, please send me a message!</div>
 			<form onSubmit={handleSubmit}>
 				<input type="hidden" name="form-name" value="contact" />
-				<p>
+				<p id="nameEmail">
 					<label className="inputLabel">
+						<p>Name</p>
 						<input
 							type="text"
 							name="name"
-							placeholder="Name"
+							// placeholder="Name"
 							value={contact.name}
 							onChange={handleChange}
 							className="contactInput"
 						/>
 					</label>
-				</p>
-				<p>
 					<label className="inputLabel">
+						<p>Email</p>
 						<input
 							type="email"
 							name="email"
-							placeholder="Email"
+							// placeholder="Email"
 							value={contact.email}
 							onChange={handleChange}
 							className="contactInput"
 						/>
 					</label>
 				</p>
-				<p>
-					<label className="inputLabel">
+				<p id="messageBox">
+					<label className="inputLabelMessage">
+						<p>Message</p>
 						<textarea
 							name="message"
-							placeholder="Message"
+							// placeholder="Message"
 							value={contact.message}
 							onChange={handleChange}
 							className="contactInputMessage"
