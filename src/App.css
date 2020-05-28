@@ -30,7 +30,68 @@ body {
 	font-size: 1.5rem;
 }
 
+.linkCon1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 10%;
+	color: #000;
+	text-decoration: underline;
+	transform: scaleX(0);
+	transition: opacity 1s, transform 1s ease-in-out;
+	opacity: 0;
+}
+
+.linkCon2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 10%;
+	color: #000;
+	text-decoration: underline;
+	transform: scaleX(0);
+	transition: opacity 1s, transform 1s ease-in-out;
+	opacity: 0;
+	transition-delay: 0.1s;
+}
+.linkCon3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 10%;
+	color: #000;
+	text-decoration: underline;
+	transform: scaleX(0);
+	transition: opacity 1s, transform 1s ease-in-out;
+	opacity: 0;
+	transition-delay: 0.2s;
+}
+.linkCon4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 10%;
+	color: #000;
+	text-decoration: underline;
+	transform: scaleX(0);
+	transition: opacity 1s, transform 1s ease-in-out;
+	opacity: 0;
+	transition-delay: 0.3s;
+}
+
+.navBarLink1Load:hover {
+}
+
 .navBarLink1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	width: 10%;
 	color: #f5f5f5;
 }
 
@@ -39,21 +100,21 @@ body {
 	color: #f5f5f5;
 }
 
-.navBarLink1:hover {
+/* .navBarLink1:hover {
 	box-shadow: 1px 1px 1px 1px #bebebe, 2px 2px 1px 1px #bebebe,
 		3px 3px 1px 1px #bebebe, 4px 4px 1px 1px #bebebe, 5px 5px 1px 1px #bebebe,
 		6px 6px 1px 1px #bebebe, 7px 7px 1px 1px #bebebe;
 	transform: translateX(-7px);
 	padding: 0.25rem;
-}
+} */
 
-.navBarLink2:hover {
+/* .navBarLink2:hover {
 	box-shadow: -7px 7px 1px 1px #bebebe, -6px 6px 1px 1px #bebebe,
 		-5px 5px 1px 1px #bebebe, -4px 4px 1px 1px #bebebe, -3px 3px 1px 1px #bebebe,
 		-2px 2px 1px 1px #bebebe, -1px 1px 1px 1px #bebebe;
 	transform: translateX(7px);
 	padding: 0.25rem;
-}
+} */
 
 .flexCon {
 	display: flex;
@@ -61,9 +122,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 20%;
-	height: 50vh;
-	margin: auto;
-	margin-top: 5rem;
+	height: 80%;
 }
 
 .githubIcon {
@@ -71,6 +130,10 @@ body {
 	color: black;
 	font-size: 6rem;
 	margin-top: 1.75rem;
+}
+
+#aboutText {
+	color: white;
 }
 
 .aboutCon {
