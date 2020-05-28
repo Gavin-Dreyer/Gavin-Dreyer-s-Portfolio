@@ -73,7 +73,7 @@ const LandingPage = () => {
 				}}
 				id="aboutText"
 			>
-				Welcome! I'm Gavin!{' '}
+				Welcome! I'm Gavin!
 			</p>
 			<p
 				id="aboutTextDev"
@@ -91,8 +91,12 @@ const LandingPage = () => {
 			>
 				<span id="techSk">Technical Skills</span>
 				<span id="techSkC">:</span>
-				{skills.map(skill => {
-					return <span className="skills">{skill}</span>;
+				{skills.map((skill, index) => {
+					return (
+						<span className="skills" key={index}>
+							{skill}
+						</span>
+					);
 				})}
 			</p>
 		</div>
