@@ -432,6 +432,11 @@ body {
 	}
 }
 
+footer {
+	color: white;
+	margin: 0.5rem;
+}
+
 @media screen and (max-width: 780px) {
 	.projectImage2 {
 		background-position: 0% 2%;

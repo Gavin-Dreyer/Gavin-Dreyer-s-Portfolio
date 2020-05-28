@@ -36,8 +36,8 @@ const About = () => {
 				from building webApp clients in React in combination with Redux for
 				state management. On the server side I am skilled at utilizing Node with
 				Express in combination with Knex for queries in a RESTFUL API, or using
-				GraphQL for a more dynamic approach. For databases, I am competent in
-				Sqlite and PostgreSQL.
+				GraphQL for a more dynamic approach. For databases, I am competent at
+				using Sqlite and PostgreSQL.
 			</p>
 			<p
 				ref={element => {

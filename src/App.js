@@ -7,6 +7,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import LandingPage from './components/LandingPage';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/portfolio" component={Portfolio} />
 				<Route path="/contact" component={Contact} />
 			</div>
+			<Footer />
 		</Router>
 	);
 }
