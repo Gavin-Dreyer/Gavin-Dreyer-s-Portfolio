@@ -9,7 +9,7 @@ head {
 body {
 	font-family: 'Titillium Web', sans-serif;
 	/* background-color: #dcecfa; */
-	background-image: url('./assets/background.png');
+	background-image: url('https://pixboost.com/api/2/img/https://www.gavindreyer.com/static/media/background.bb2821eb.png/optimise?auth=Mzc4MTc2NTQ0Mw__');
 	height: 100%;
 }
 
@@ -45,6 +45,7 @@ body {
 	transform: scaleX(0);
 	transition: opacity 1s, transform 1s ease-in-out;
 	opacity: 0;
+	transition-delay: 0.2s;
 }
 
 .linkCon2 {
@@ -58,7 +59,7 @@ body {
 	transform: scaleX(0);
 	transition: opacity 1s, transform 1s ease-in-out;
 	opacity: 0;
-	transition-delay: 0.1s;
+	transition-delay: 0.3s;
 }
 .linkCon3 {
 	display: flex;
@@ -71,7 +72,7 @@ body {
 	transform: scaleX(0);
 	transition: opacity 1s, transform 1s ease-in-out;
 	opacity: 0;
-	transition-delay: 0.2s;
+	transition-delay: 0.4s;
 }
 .linkCon4 {
 	display: flex;
@@ -84,7 +85,7 @@ body {
 	transform: scaleX(0);
 	transition: opacity 1s, transform 1s ease-in-out;
 	opacity: 0;
-	transition-delay: 0.3s;
+	transition-delay: 0.5s;
 }
 
 .flyOut {
