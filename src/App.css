@@ -87,38 +87,49 @@ body {
 	transition-delay: 0.3s;
 }
 
-.navBarLink1Load:hover {
-}
-
-.navBarLink1 {
+.flyOut {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 50%;
 	width: 10%;
+}
+
+.navBarLink1 {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 60%;
 	color: #f5f5f5;
 }
 
 .navBarLink2 {
-	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 60%;
 	color: #f5f5f5;
 }
 
-/* .navBarLink1:hover {
+.navBarLink1:hover {
 	box-shadow: 1px 1px 1px 1px #bebebe, 2px 2px 1px 1px #bebebe,
 		3px 3px 1px 1px #bebebe, 4px 4px 1px 1px #bebebe, 5px 5px 1px 1px #bebebe,
 		6px 6px 1px 1px #bebebe, 7px 7px 1px 1px #bebebe;
 	transform: translateX(-7px);
 	padding: 0.25rem;
-} */
+}
 
-/* .navBarLink2:hover {
+.navBarLink2:hover {
 	box-shadow: -7px 7px 1px 1px #bebebe, -6px 6px 1px 1px #bebebe,
 		-5px 5px 1px 1px #bebebe, -4px 4px 1px 1px #bebebe, -3px 3px 1px 1px #bebebe,
 		-2px 2px 1px 1px #bebebe, -1px 1px 1px 1px #bebebe;
 	transform: translateX(7px);
 	padding: 0.25rem;
-} */
+}
 
 .flexCon {
 	display: flex;
