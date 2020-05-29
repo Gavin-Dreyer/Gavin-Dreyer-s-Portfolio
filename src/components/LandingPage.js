@@ -28,16 +28,19 @@ const LandingPage = () => {
 			x: -300,
 			opacity: 0,
 			scale: 0.5,
+			delay: 0.1,
 			ease: Back.ease
 		});
 		TweenMax.from(textElementDev, 1.5, {
 			opacity: 1,
 			scale: 0.5,
+			delay: 0.2,
 			ease: Back.ease
 		});
 		TweenMax.from(textElementSkills, 1.5, {
 			opacity: 1,
 			scale: 0.5,
+			delay: 0.3,
 			ease: Back.ease
 		});
 	}, []);

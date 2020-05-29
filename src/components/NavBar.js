@@ -38,25 +38,25 @@ const NavBar = props => {
 			TweenMax.from(link1, 1, {
 				opacity: 0,
 				scale: 1,
-				delay: 0.4,
+				delay: 0.6,
 				ease: Back.ease
 			});
 			TweenMax.from(link2, 1, {
 				opacity: 0,
 				scale: 1,
-				delay: 0.5,
+				delay: 0.7,
 				ease: Back.ease
 			});
 			TweenMax.from(link3, 1, {
 				opacity: 0,
 				scale: 1,
-				delay: 0.6,
+				delay: 0.8,
 				ease: Back.ease
 			});
 			TweenMax.from(link4, 1, {
 				opacity: 0,
 				scale: 1,
-				delay: 0.7,
+				delay: 0.9,
 				ease: Back.ease
 			});
 		}

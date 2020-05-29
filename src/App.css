@@ -2,10 +2,14 @@ html {
 	height: 100%;
 }
 
+head {
+	height: 100%;
+}
+
 body {
 	font-family: 'Titillium Web', sans-serif;
 	/* background-color: #dcecfa; */
-	background-image: url('./assets/background.jpg');
+	background-image: url('./assets/background.png');
 	height: 100%;
 }
 
