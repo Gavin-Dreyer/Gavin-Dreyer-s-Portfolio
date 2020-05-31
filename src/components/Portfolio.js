@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { TweenMax, Back } from 'gsap';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
-import Project1 from './projects/Project1';
+import { Project1, Project1Image } from './projects/Project1';
 import Project2 from './projects/Project2';
 import Project3 from './projects/Project3';
 
@@ -9,11 +10,60 @@ const Portfolio = () => {
 	let proj1 = useRef(null);
 	let proj2 = useRef(null);
 	let proj3 = useRef(null);
+
+	let proj1Ref = useRef(null);
+
 	const [project, setProject] = useState(1);
+	const [project1, setProject1] = useState(true);
 
 	useEffect(() => {
 		proj1.current.style.border = '1px solid black';
 		proj1.current.style.padding = '5px 10px';
+
+		// TweenMax.from(proj1Ref, 2, {
+		// 	opacity: 0,
+		// 	// x: 300,
+		// 	scale: 1,
+		// 	ease: Back.ease
+		// });
+
+		const flipImg = e => {
+			console.log(e.type);
+			if (e.type === 'mouseover') {
+				if (proj1Ref) {
+					TweenMax.to(proj1Ref, 0.5, {
+						opacity: 0,
+						scale: 1,
+						ease: Back.ease
+					});
+				}
+
+				setTimeout(() => {
+					setProject1(false);
+				}, 600);
+			} else if (e.type === 'mouseout') {
+				console.log(proj1Ref);
+				if (proj1Ref) {
+					TweenMax.to(proj1Ref, 0.5, {
+						opacity: 1,
+						scale: 1,
+						ease: Back.ease
+					});
+				}
+
+				setTimeout(() => {
+					setProject1(true);
+				}, 600);
+			}
+		};
+
+		proj1Ref.addEventListener('mouseover', flipImg);
+		proj1Ref.addEventListener('mouseout', flipImg);
+
+		return () => {
+			proj1Ref.removeEventListener('mouseover', flipImg);
+			proj1Ref.removeEventListener('mouseout', flipImg);
+		};
 	}, []);
 
 	const navigateUp = () => {
@@ -88,9 +138,27 @@ const Portfolio = () => {
 			<div className="portfolioProjects">
 				<FaArrowLeft className="arrowBtn" onClick={() => navigateDown()} />
 
-				{project === 1 ? <Project1 /> : null}
-				{project === 2 ? <Project2 /> : null}
-				{project === 3 ? <Project3 /> : null}
+				{project === 1 ? (
+					<div
+						className="proj1Con"
+						ref={element => {
+							proj1Ref = element;
+						}}
+					>
+						{' '}
+						{project1 ? <Project1Image /> : <Project1 />}
+					</div>
+				) : null}
+				{project === 2 ? (
+					<div>
+						<Project2 />
+					</div>
+				) : null}
+				{project === 3 ? (
+					<div>
+						<Project3 />
+					</div>
+				) : null}
 
 				<FaArrowRight className="arrowBtn" onClick={() => navigateUp()} />
 			</div>
