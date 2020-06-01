@@ -70,7 +70,7 @@ const Portfolio = () => {
 	});
 
 	useEffect(() => {
-		proj1.current.style.border = '1px solid black';
+		proj1.current.style.border = '1px solid #bebebe';
 		proj1.current.style.padding = '5px 10px';
 	}, []);
 
@@ -88,7 +88,7 @@ const Portfolio = () => {
 		if (project === 1) {
 			setProject(2);
 
-			proj2.current.style.border = '1px solid black';
+			proj2.current.style.border = '1px solid #bebebe';
 			proj2.current.style.padding = '5px 10px';
 
 			proj1.current.style.border = '';
@@ -96,7 +96,7 @@ const Portfolio = () => {
 		} else if (project === 2) {
 			setProject(3);
 
-			proj3.current.style.border = '1px solid black';
+			proj3.current.style.border = '1px solid #bebebe';
 			proj3.current.style.padding = '5px 10px';
 
 			proj2.current.style.border = '';
@@ -104,7 +104,7 @@ const Portfolio = () => {
 		} else if (project === 3) {
 			setProject(1);
 
-			proj1.current.style.border = '1px solid black';
+			proj1.current.style.border = '1px solid #bebebe';
 			proj1.current.style.padding = '5px 10px';
 
 			proj3.current.style.border = '';
@@ -116,7 +116,7 @@ const Portfolio = () => {
 		if (project === 3) {
 			setProject(2);
 
-			proj2.current.style.border = '1px solid black';
+			proj2.current.style.border = '1px solid #bebebe';
 			proj2.current.style.padding = '5px 10px';
 
 			proj3.current.style.border = '';
@@ -124,7 +124,7 @@ const Portfolio = () => {
 		} else if (project === 2) {
 			setProject(1);
 
-			proj1.current.style.border = '1px solid black';
+			proj1.current.style.border = '1px solid #bebebe';
 			proj1.current.style.padding = '5px 10px';
 
 			proj2.current.style.border = '';
@@ -132,7 +132,7 @@ const Portfolio = () => {
 		} else if (project === 1) {
 			setProject(3);
 
-			proj3.current.style.border = '1px solid black';
+			proj3.current.style.border = '1px solid #bebebe';
 			proj3.current.style.padding = '5px 10px';
 
 			proj1.current.style.border = '';
