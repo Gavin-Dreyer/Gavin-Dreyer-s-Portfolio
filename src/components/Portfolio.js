@@ -20,12 +20,14 @@ const Portfolio = () => {
 	const [project3, setProject3] = useState(true);
 
 	const flipImg = useCallback(e => {
-		console.log(
-			e.target,
+		console
+			.log
+			// e.target,
 			// e.target.parentNode.classList,
-			e.target.classList,
-			project1
-		);
+			// e.target.classList,
+			// project1,
+			// e.type
+			();
 		if (e.type === 'mouseover') {
 			if (
 				e.target.classList.contains(`imageCon${project}`) &&
@@ -46,10 +48,9 @@ const Portfolio = () => {
 					setProject2(false);
 					setProject3(false);
 				}, 510);
-			} else if (
-				e.target.classList.contains(`portfolio`) &&
-				(!project1 || !project2 || !project3)
-			) {
+			}
+		} else if (e.type === 'mouseleave') {
+			if (e.target.classList.contains('portfolioProjectsCon')) {
 				TweenMax.to(e.target, 0.5, {
 					opacity: 0,
 					scale: 1,
@@ -67,26 +68,6 @@ const Portfolio = () => {
 				}, 600);
 			}
 		}
-
-		// else if (e.type === 'mouseout') {
-		// 	if (e.target.parentNode.classList.contains('portfolio')) {
-		// TweenMax.to(e.target, 0.5, {
-		// 	opacity: 0,
-		// 	scale: 1,
-		// 	ease: Back.ease
-		// });
-		// setTimeout(() => {
-		// 	TweenMax.to(e.target, 0.5, {
-		// 		opacity: 1,
-		// 		scale: 1,
-		// 		ease: Back.ease
-		// 	});
-		// 	setProject1(true);
-		// 	setProject2(true);
-		// 	setProject3(true);
-		// }, 600);
-		// 	}
-		// }
 	});
 
 	useEffect(() => {
@@ -96,11 +77,11 @@ const Portfolio = () => {
 
 	useEffect(() => {
 		window.addEventListener('mouseover', flipImg);
-		// window.addEventListener('mouseout', flipImg);
+		proj1Ref.current.addEventListener('mouseleave', flipImg);
 
 		return () => {
 			window.removeEventListener('mouseover', flipImg);
-			// window.removeEventListener('mouseout', flipImg);
+			proj1Ref.current.removeEventListener('mouseleave', flipImg);
 		};
 	}, [flipImg]);
 
@@ -175,7 +156,7 @@ const Portfolio = () => {
 			</div>
 			<div className="portfolioProjects">
 				<FaArrowLeft className="arrowBtn" onClick={() => navigateDown()} />
-				<div className="portfolioProjectsCon">
+				<div className="portfolioProjectsCon" ref={proj1Ref}>
 					{project === 1 ? project1 ? <Project1Image /> : <Project1 /> : null}
 					{project === 2 ? project2 ? <Project2Image /> : <Project2 /> : null}
 					{project === 3 ? project3 ? <Project3Image /> : <Project3 /> : null}
