@@ -1,19 +1,26 @@
 import React from 'react';
-import WellDone from '../../assets/WellDoneLanding.png';
-const Project1 = () => {
+import WellDone from '../../assets/welldone.png';
+import Laptop from '../../assets/laptop.png';
+
+export const Project1Image = () => {
+	return (
+		<div className="portfolioPiece">
+			<a className="projectImage1" href="https://welldone.netlify.app/">
+				<div className="imageCon1">
+					<img src={Laptop} alt="laptop" className="laptop" />
+					<img src={WellDone} alt="fresh well water" className="hoverImage" />
+				</div>
+			</a>
+		</div>
+	);
+};
+
+export const Project1 = () => {
 	return (
 		<div className="portfolioPiece">
 			<a className="projectTitle" href="https://welldone.netlify.app/">
 				WellDone Dashboard
 			</a>
-			<a
-				className="projectImage1"
-				alt="fresh well water"
-				href="https://welldone.netlify.app/"
-			>
-				<img src={WellDone} className="imageCon" />
-			</a>
-
 			<p>
 				A dashboard for the WellDone organization to display the current status
 				and historical counts of individual wells
@@ -50,5 +57,3 @@ const Project1 = () => {
 		</div>
 	);
 };
-
-export default Project1;

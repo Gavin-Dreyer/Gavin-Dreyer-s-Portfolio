@@ -1,18 +1,25 @@
 import React from 'react';
-import Ali from '../../assets/Conjugator.png';
+import Ali from '../../assets/ConjSite.png';
+import Laptop from '../../assets/laptop.png';
 
-const Project2 = () => {
+export const Project2Image = () => {
+	return (
+		<div className="portfolioPiece2">
+			<a className="projectImage2" href="https://gdconjugator.netlify.app/">
+				<div className="imageCon2">
+					<img src={Laptop} alt="laptop" className="laptop" />
+					<img src={Ali} alt="cartoon aligator" className="hoverImage" />
+				</div>
+			</a>
+		</div>
+	);
+};
+
+export const Project2 = () => {
 	return (
 		<div className="portfolioPiece2">
 			<a className="projectTitle2" href="https://gdconjugator.netlify.app/">
 				Conjugator
-			</a>
-			<a
-				className="projectImage2"
-				alt="cartoon aligator"
-				href="https://gdconjugator.netlify.app/"
-			>
-				<img src={Ali} className="imageCon2" />
 			</a>
 
 			<p>A webApp used to practice conjugations of Spanish verbs</p>
@@ -54,5 +61,3 @@ const Project2 = () => {
 		</div>
 	);
 };
-
-export default Project2;
