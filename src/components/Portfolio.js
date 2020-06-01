@@ -20,14 +20,13 @@ const Portfolio = () => {
 	const [project3, setProject3] = useState(true);
 
 	const flipImg = useCallback(e => {
-		console
-			.log
-			// e.target,
+		console.log(
+			e.target,
 			// e.target.parentNode.classList,
 			// e.target.classList,
-			// project1,
+			project
 			// e.type
-			();
+		);
 		if (e.type === 'mouseover') {
 			if (
 				e.target.classList.contains(`imageCon${project}`) &&

@@ -280,8 +280,24 @@ body {
 
 .imageCon1 {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.laptop {
+	height: 95%;
+	width: 95%;
+}
+
+.hoverImage {
+	margin-top: -0.9rem;
+	height: 60%;
+	width: 44%;
+	border-radius: 5px;
+	position: absolute;
 }
 
 .projectTitle {
@@ -465,13 +481,50 @@ body {
 	transition: border, background-color, 0.1s;
 }
 
+@media screen and (max-width: 3000px) {
+	.hoverImage {
+		height: 60%;
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 2600px) {
+	.hoverImage {
+		height: 60%;
+		width: 48%;
+	}
+}
+
+@media screen and (max-width: 2100px) {
+	.hoverImage {
+		height: 60%;
+		width: 46%;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	.hoverImage {
+		height: 60%;
+		width: 44%;
+	}
+}
+
 @media screen and (max-width: 1300px) {
+	.hoverImage {
+		height: 60%;
+		width: 42%;
+	}
 	.projectImage2 {
 		background-position: 0% 1%;
 	}
 }
 
 @media screen and (max-width: 1080px) {
+	.hoverImage {
+		height: 60%;
+		width: 40%;
+	}
+
 	.projectImage2 {
 		background-position: 0% 2%;
 	}
