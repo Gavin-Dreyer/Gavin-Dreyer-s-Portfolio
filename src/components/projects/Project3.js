@@ -1,19 +1,25 @@
 import React from 'react';
 import Somnus from '../../assets/Somnus.svg';
 
-const Project3 = () => {
+export const Project3Image = () => {
 	return (
 		<div className="portfolioPiece">
-			<a className="projectTitle" href="https://lambdasomnus.netlify.app/">
-				Somnus
-			</a>
-
 			<a
 				className="projectImage3"
 				alt="landscape"
 				href="https://lambdasomnus.netlify.app/"
 			>
 				<img src={Somnus} className="imageCon3" />
+			</a>
+		</div>
+	);
+};
+
+export const Project3 = () => {
+	return (
+		<div className="portfolioPiece">
+			<a className="projectTitle" href="https://lambdasomnus.netlify.app/">
+				Somnus
 			</a>
 
 			<p>

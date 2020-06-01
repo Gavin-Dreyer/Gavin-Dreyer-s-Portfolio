@@ -3,8 +3,8 @@ import { TweenMax, Back } from 'gsap';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 import { Project1, Project1Image } from './projects/Project1';
-import Project2 from './projects/Project2';
-import Project3 from './projects/Project3';
+import { Project2, Project2Image } from './projects/Project2';
+import { Project3, Project3Image } from './projects/Project3';
 
 const Portfolio = () => {
 	let proj1 = useRef(null);
@@ -16,16 +16,21 @@ const Portfolio = () => {
 	const [project, setProject] = useState(1);
 
 	const [project1, setProject1] = useState(true);
+	const [project2, setProject2] = useState(true);
+	const [project3, setProject3] = useState(true);
 
 	const flipImg = useCallback(e => {
 		console.log(
 			e.target,
-			e.target.parentNode.classList,
-			e.target.children,
-			e.type
+			// e.target.parentNode.classList,
+			e.target.classList,
+			project1
 		);
 		if (e.type === 'mouseover') {
-			if (e.target.classList.contains('imageCon1')) {
+			if (
+				e.target.classList.contains(`imageCon${project}`) &&
+				(project1 || project2 || project3)
+			) {
 				TweenMax.to(e.target, 0.5, {
 					opacity: 0,
 					scale: 1,
@@ -38,10 +43,13 @@ const Portfolio = () => {
 						ease: Back.ease
 					});
 					setProject1(false);
-				}, 600);
-			}
-		} else if (e.type === 'mouseout') {
-			if (e.target.parentNode.classList.contains('portfolio')) {
+					setProject2(false);
+					setProject3(false);
+				}, 510);
+			} else if (
+				e.target.classList.contains(`portfolio`) &&
+				(!project1 || !project2 || !project3)
+			) {
 				TweenMax.to(e.target, 0.5, {
 					opacity: 0,
 					scale: 1,
@@ -54,21 +62,45 @@ const Portfolio = () => {
 						ease: Back.ease
 					});
 					setProject1(true);
+					setProject2(true);
+					setProject3(true);
 				}, 600);
 			}
 		}
-	}, []);
+
+		// else if (e.type === 'mouseout') {
+		// 	if (e.target.parentNode.classList.contains('portfolio')) {
+		// TweenMax.to(e.target, 0.5, {
+		// 	opacity: 0,
+		// 	scale: 1,
+		// 	ease: Back.ease
+		// });
+		// setTimeout(() => {
+		// 	TweenMax.to(e.target, 0.5, {
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		ease: Back.ease
+		// 	});
+		// 	setProject1(true);
+		// 	setProject2(true);
+		// 	setProject3(true);
+		// }, 600);
+		// 	}
+		// }
+	});
 
 	useEffect(() => {
 		proj1.current.style.border = '1px solid black';
 		proj1.current.style.padding = '5px 10px';
+	}, []);
 
-		proj1Ref.addEventListener('mouseover', flipImg);
-		proj1Ref.addEventListener('mouseout', flipImg);
+	useEffect(() => {
+		window.addEventListener('mouseover', flipImg);
+		// window.addEventListener('mouseout', flipImg);
 
 		return () => {
-			proj1Ref.removeEventListener('mouseover', flipImg);
-			proj1Ref.removeEventListener('mouseout', flipImg);
+			window.removeEventListener('mouseover', flipImg);
+			// window.removeEventListener('mouseout', flipImg);
 		};
 	}, [flipImg]);
 
@@ -128,7 +160,6 @@ const Portfolio = () => {
 		}
 	};
 
-	// console.log(proj1Ref, curElement);
 	return (
 		<div className="portfolio">
 			<div className="carousel">
@@ -142,29 +173,13 @@ const Portfolio = () => {
 					{'■'}
 				</span>
 			</div>
-			<div
-				className="portfolioProjects"
-				ref={element => {
-					proj1Ref = element;
-				}}
-			>
+			<div className="portfolioProjects">
 				<FaArrowLeft className="arrowBtn" onClick={() => navigateDown()} />
-
-				{project === 1 ? (
-					<div className="proj1Con">
-						{project1 ? <Project1Image /> : <Project1 />}
-					</div>
-				) : null}
-				{project === 2 ? (
-					<div>
-						<Project2 />
-					</div>
-				) : null}
-				{project === 3 ? (
-					<div>
-						<Project3 />
-					</div>
-				) : null}
+				<div className="portfolioProjectsCon">
+					{project === 1 ? project1 ? <Project1Image /> : <Project1 /> : null}
+					{project === 2 ? project2 ? <Project2Image /> : <Project2 /> : null}
+					{project === 3 ? project3 ? <Project3Image /> : <Project3 /> : null}
+				</div>
 
 				<FaArrowRight className="arrowBtn" onClick={() => navigateUp()} />
 			</div>
