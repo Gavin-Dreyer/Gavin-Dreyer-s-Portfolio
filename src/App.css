@@ -339,19 +339,35 @@ body {
 	font-size: 2rem;
 }
 
-.imageCon3 {
-	height: 30vh;
-	width: 50%;
-	border-radius: 0.25rem;
-}
-
 .projectImage3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 30%;
+	height: 100%;
+	width: 50%;
+	border-radius: 0.25rem;
+}
+
+.imageCon3 {
+	height: 100%;
 	width: 80%;
 	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iPhone {
+	height: 100%;
+	width: 80%;
+}
+
+.hoverImagePhone {
+	margin-top: 0.2rem;
+	height: 55%;
+	width: 20%;
+	border-radius: 5px;
+	position: absolute;
 }
 
 .portfolioPiece ul {
@@ -490,6 +506,11 @@ body {
 		height: 60%;
 		width: 50%;
 	}
+
+	.hoverImagePhone {
+		height: 55%;
+		width: 20%;
+	}
 }
 
 @media screen and (max-width: 2600px) {
@@ -497,12 +518,22 @@ body {
 		height: 60%;
 		width: 48%;
 	}
+
+	.hoverImagePhone {
+		height: 55%;
+		width: 19.5%;
+	}
 }
 
 @media screen and (max-width: 2100px) {
 	.hoverImage {
 		height: 60%;
 		width: 46%;
+	}
+
+	.hoverImagePhone {
+		height: 55%;
+		width: 19%;
 	}
 }
 
@@ -518,6 +549,12 @@ body {
 		height: 60%;
 		width: 42%;
 	}
+
+	.hoverImagePhone {
+		height: 55%;
+		width: 18.5%;
+	}
+
 	.projectImage2 {
 		background-position: 0% 1%;
 	}
@@ -527,6 +564,11 @@ body {
 	.hoverImage {
 		height: 60%;
 		width: 40%;
+	}
+
+	.hoverImagePhone {
+		height: 55%;
+		width: 18%;
 	}
 
 	.projectImage2 {

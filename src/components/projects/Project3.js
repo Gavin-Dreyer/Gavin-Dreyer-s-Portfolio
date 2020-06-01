@@ -1,15 +1,15 @@
 import React from 'react';
-import Somnus from '../../assets/Somnus.svg';
+import Somnus from '../../assets/Somnus.png';
+import iPhone from '../../assets/iPhone.png';
 
 export const Project3Image = () => {
 	return (
 		<div className="portfolioPiece">
-			<a
-				className="projectImage3"
-				alt="landscape"
-				href="https://lambdasomnus.netlify.app/"
-			>
-				<img src={Somnus} className="imageCon3" />
+			<a className="projectImage3" href="https://lambdasomnus.netlify.app/">
+				<div className="imageCon3">
+					<img src={iPhone} alt="iPhone" className="iPhone" />
+					<img src={Somnus} alt="landscape" className="hoverImagePhone" />
+				</div>
 			</a>
 		</div>
 	);
