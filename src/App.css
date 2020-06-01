@@ -326,8 +326,11 @@ body {
 
 .imageCon2 {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .projectTitle2 {

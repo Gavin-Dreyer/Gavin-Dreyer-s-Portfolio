@@ -1,15 +1,15 @@
 import React from 'react';
-import Ali from '../../assets/Conj.png';
+import Ali from '../../assets/ConjSite.png';
+import Laptop from '../../assets/laptop.png';
 
 export const Project2Image = () => {
 	return (
 		<div className="portfolioPiece2">
-			<a
-				className="projectImage2"
-				alt="cartoon aligator"
-				href="https://gdconjugator.netlify.app/"
-			>
-				<img src={Ali} className="imageCon2" />
+			<a className="projectImage2" href="https://gdconjugator.netlify.app/">
+				<div className="imageCon2">
+					<img src={Laptop} alt="laptop" className="laptop" />
+					<img src={Ali} alt="cartoon aligator" className="hoverImage" />
+				</div>
 			</a>
 		</div>
 	);
